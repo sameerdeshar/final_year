@@ -1,0 +1,183 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&display=swap");
+.custom-shape {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape .shape-fill {
+  fill: #e1533d;
+}
+
+.custom-shape svg {
+  position: relative;
+  display: block;
+  width: calc(153% + 1.3px);
+  height: 3.3rem;
+}
+
+.navHeader {
+  padding: 5px 3%;
+  text-decoration: none;
+  margin: 60px auto;
+  background-color: white;
+  box-shadow: 0px 0px 43px -5px #0000003a;
+  border-radius: 25px;
+  width: 75%;
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+}
+
+.navbar {
+  padding: 0px;
+}
+
+nav img {
+  max-width: 12%;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+nav ul li {
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: black;
+  font-weight: 400;
+}
+
+nav ul li a:hover {
+  color: black;
+}
+
+.navHeader .loginInput {
+  padding: 9px 25px;
+  border-radius: 20px;
+  color: #e1533d;
+  border: 1px solid #e1533d;
+  cursor: pointer;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.navHeader .loginInput:hover {
+  transition: all 0.3s ease-in-out;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.css-button-sliding-to-left--black {
+  padding: 8px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  outline: none;
+  border-radius: 9px;
+  z-index: 0;
+  margin-left: 5px;
+  overflow: hidden;
+  border: 1.8px solid #e1533d;
+  color: #e1533d;
+}
+
+.css-button-sliding-to-left--black:hover {
+  color: #fff;
+}
+
+.css-button-sliding-to-left--black:hover:after {
+  width: 100%;
+}
+.css-button-sliding-to-left--black:after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  transition: all 0.3s ease;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background: #e1533d;
+}
+
+nav li {
+  position: relative;
+}
+
+nav li a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  top: 23px;
+  left: 0px;
+  right: 0;
+  height: 1.5px;
+  width: 95%;
+  background-color: #e1533d;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+}
+
+nav li a:hover::before {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.navHeader .burgerMenuButton {
+  display: none;
+  background-color: transparent;
+  border: 0;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px) {
+  nav ul li {
+    margin: 7px auto;
+  }
+  .navHeader {
+    width: 100%;
+    display: flex;
+    border-radius: 5px;
+    margin: 0 auto 35px;
+    padding: 0;
+  }
+
+  .navHeader .navbar-toggler {
+    font-size: 1em;
+    padding: 5px;
+  }
+
+  nav img {
+    max-width: 13%;
+  }
+  nav ul li a {
+    color: #fff;
+    font-weight: 400;
+  }
+  .custom-shape {
+    display: none;
+  }
+  .navbar {
+    /*  position: fixed; */
+    z-index: 555;
+    background-color: #e1533d;
+    padding: 5px 10px;
+    border-bottom: 1px solid #1f1f1f17;
+  }
+  .css-button-sliding-to-left--black {
+    color: white;
+    border-color: white;
+    margin-top: 5px;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  nav img {
+    max-width: 24%;
+  }
+}

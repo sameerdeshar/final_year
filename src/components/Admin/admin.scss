@@ -1,0 +1,47 @@
+.containerAdmin {
+  background-color: #e1533d;
+  min-height: 100vh;
+}
+
+.containerAdmin img {
+  margin: 0 auto;
+  display: block;
+  padding-top: 50px;
+}
+
+.containerAdmin h1 {
+  color: white;
+  padding: 50px 0;
+  display: block;
+}
+
+.containerAdmin .adminInput input {
+  background-color: whitesmoke;
+  margin-bottom: 5px;
+  width: 350px;
+  text-align: left;
+  border: 0;
+  outline: none;
+  cursor: text !important;
+  border-radius: 10px !important;
+}
+
+.containerAdmin .adminLoginBtn input {
+  margin-top: 55px !important;
+  background-color: transparent;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 10px 35px;
+  width: 200px;
+  display: block;
+  margin: 0 auto;
+  text-align: center !important;
+  color: white;
+  transition: all 0.3s ease-in-out;
+  font-size: 17px;
+}
+
+.containerAdmin .adminLoginBtn input:hover {
+  background-color: whitesmoke;
+  color: #e1533d;
+}

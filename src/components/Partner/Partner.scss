@@ -1,0 +1,182 @@
+.partner {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.partner-body {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.partner .partner-body a {
+  width: 250px;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: #00a759;
+  color: white;
+  padding: 10px 0px;
+}
+
+.partner .partner-body a:hover {
+  background-color: #00ca6c;
+  transition: all 0.5s ease-in-out;
+}
+
+.partnerContainer {
+  max-width: 50vw;
+  display: block;
+  margin: 45px auto 45px;
+}
+
+.progressbar {
+  counter-reset: step;
+}
+
+.progressbar li {
+  list-style-type: none;
+  width: 25%;
+  float: left;
+  font-size: 15.5px;
+  position: relative;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.progressbar li:before {
+  width: 45px;
+  height: 45px;
+  content: counter(step);
+  counter-increment: step;
+  line-height: 45px;
+  color: white;
+  border: 2px solid #e1533d;
+  display: block;
+  text-align: center;
+  margin: 0 auto 10px auto;
+  border-radius: 50%;
+  background-color: #e1533d;
+}
+
+.progressbar li:after {
+  width: 100%;
+  height: 2px;
+  content: "";
+  position: absolute;
+  background-color: #dbdbdb;
+  top: 24px;
+  left: -50%;
+  z-index: -1;
+}
+
+.progressbar li:first-child:after {
+  content: none;
+}
+.progressbar li.active {
+  color: #00c269;
+}
+
+.progressbar li.active:before {
+  border-color: #ccf3e1;
+  background-color: #00c269;
+  color: white;
+}
+
+.progressbar li.active + li:after {
+  background-color: #00c269;
+}
+
+.flexContainerJoin {
+  margin: 70px 0 0px 0;
+  padding: 40px 0 40px 0;
+  background-color: whitesmoke;
+  border-top: 1px solid rgb(223, 223, 223);
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.flexContainerJoin p {
+  font-size: 18px;
+  color: black;
+}
+
+.flexContainerJoin p span {
+  color: #e1533d;
+}
+
+.FlexContainer {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  margin-top: 35px;
+}
+
+.FlexContainer div {
+  width: 85vw;
+}
+
+.FlexContainer p {
+  font-size: 16px;
+  color: #b6b6b6;
+  font-weight: 300;
+}
+
+.partnerSection3 {
+  display: flex;
+  flex-direction: row;
+  padding: 50px 0;
+}
+
+.partnerSectionBody {
+  margin: 0 auto;
+  align-items: center;
+  display: flex;
+  padding: 50px 0;
+}
+
+.partnerSection3 h2 {
+  margin-left: 65px;
+}
+.partnerSection3 img {
+  max-width: 300px;
+  border-radius: 190px;
+  border: 2px solid #e1533d;
+  border: inset;
+}
+
+@media screen and (max-width: 1025px) {
+  .partnerSection3 {
+    padding: 25px 0;
+  }
+  .partnerSectionBody {
+    flex-direction: column-reverse;
+    display: flex;
+    padding: 25px 0;
+  }
+  .partnerSectionBody h2 {
+    margin: 0 0 25px 0;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .partnerContainer {
+    max-width: 95vw;
+  }
+  .FlexContainer div {
+    width: 95vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .partnerContainer {
+    max-width: 95vw;
+  }
+  .FlexContainer {
+    flex-direction: column;
+  }
+}

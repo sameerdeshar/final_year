@@ -1,0 +1,63 @@
+.home {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: whitesmoke; */
+}
+
+.HeaderHome {
+  text-align: center;
+}
+
+.effectButton {
+  text-decoration: none;
+  color: #fff !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+  outline: none;
+  overflow: hidden;
+  border-radius: 5px;
+  border: none;
+  background-color: #e1533d;
+  padding: 15px 70px;
+  margin: 40px 0 25px;
+}
+
+.effectButton:hover {
+  border-radius: 5px;
+  padding-right: 80px;
+  color: #fff !important;
+  padding-left: 80px;
+}
+
+.effectButton:hover:after {
+  opacity: 1;
+  right: 15px;
+}
+
+.effectButton:after {
+  content: "\00BB";
+  position: absolute;
+  opacity: 0;
+  font-size: 22px;
+  line-height: 40px;
+  top: 3px;
+  right: -20px;
+  transition: 0.4s;
+}
+
+.home h1 {
+  font-size: 2.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .home h1 {
+    font-size: 1.5em;
+  }
+  .effectButton {
+    padding: 10px 50px;
+  }
+}

@@ -1,0 +1,85 @@
+.titleMenu {
+  margin-top: 25px;
+}
+.restaurantMenuContainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.restaurantMenuContainer .cardMenu {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: 1px solid rgba(206, 206, 206, 0.623);
+  padding: 4px;
+  border-radius: 5px;
+}
+
+.menuInfo {
+  max-width: 16vw;
+}
+.restaurantMenuContainer .cardMenu img {
+  max-width: 85px;
+  transition: transform 0.3s;
+  border: 1px solid rgba(206, 206, 206, 0.493);
+  border-radius: 3px;
+  cursor: zoom-in;
+  cursor: -webkit-zoom-in;
+}
+
+.restaurantMenuContainer .cardMenu img:hover {
+  transform: scale(2);
+  border: 1px solid rgba(206, 206, 206, 0.623);
+}
+.restaurantMenuContainer .menuBody {
+  margin-left: 5px;
+}
+
+.restaurantMenuContainer .menuBody h6 {
+  font-size: 15px;
+}
+.restaurantMenuContainer .cardMenu .menuBody p {
+  font-size: 13px;
+  color: rgb(114, 114, 114);
+  max-width: 95%;
+  margin: 0 !important;
+  display: inline-block;
+}
+
+.restaurantMenuContainer .cardMenu .menuBody button {
+  color: #e1533d;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.restaurantMenuContainer .cardMenu .menuBody button:hover {
+  transition: all 0.3s ease-in-out;
+  color: #b33825;
+}
+
+.restaurantMenuContainer .cardMenu .buyFromMenu #price {
+  font-size: 13px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 1025px) {
+  .menuInfo {
+    max-width: 30vw;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .menuInfo {
+    max-width: 25vw;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  .menuInfo {
+    max-width: 55vw;
+  }
+}

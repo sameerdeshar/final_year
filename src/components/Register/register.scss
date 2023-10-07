@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&display=swap");
+
+* {
+  font-family: "Outfit", sans-serif;
+}
+
+.MainRegister {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.containerReg {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+.registerContainer {
+  display: flex;
+  box-shadow: 50px 25px 100px 50px #e1533d10;
+  padding: 25px 35px;
+  border-radius: 15px;
+}
+
+.MainRegister .MainRegLeft {
+  align-items: flex-start;
+}
+
+.MainRegister .MainRegLeft img {
+  border-radius: 50px;
+  margin-top: 55px;
+  margin-right: 20px;
+}
+
+.MainRegister form {
+  align-items: flex-end;
+  background: whitesmoke;
+  /** box-shadow: 50px 25px 100px 50px #e1533d10 **/
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  padding: 20px 0px 0px 0;
+}
+
+.registerContainer h1 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 27px;
+  color: #e1533d;
+  font-size: 28px;
+  text-align: left !important;
+}
+
+.registerContainer form .RegisterFullNameDiv input,
+.RegisterPasswordsDiv input {
+  width: 200px;
+  border: none;
+  outline: none;
+  margin: 2px auto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 10px 5px;
+  background: transparent;
+}
+
+.registerContainer form .RegisterEmailDiv input,
+.RegisterPhoneDiv input {
+  border: none;
+  outline: none;
+  margin: 2px auto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 10px 5px;
+  width: 400px;
+  background: transparent;
+}
+
+.registerContainer form .RegisterShowPasswordDiv input {
+  border: none;
+  outline: none;
+  margin: 2px auto;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 10px 0 10px 5px;
+  width: 200px;
+}
+
+.registerContainer form button {
+  margin: 19px auto 0 auto;
+  display: block;
+  border: 2px solid #e1533d;
+  color: #e1533d;
+  width: 150px;
+  box-shadow: 0px 0px 15px -4px #00000033;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.registerContainer input::placeholder {
+  color: #611d12d0 !important;
+}
+
+.registerContainer form button:hover {
+  background-color: #e1533d;
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+
+.registerContainer form .RegisterShowPasswordDiv input {
+  margin-right: 5px;
+  height: 13px;
+  width: 13px;
+  margin-top: 2px;
+}
+
+#AcceptTerms {
+  margin-top: 10px !important;
+  margin-right: 5px;
+  height: 13px;
+  accent-color: #e1533d;
+  width: 13px;
+  background-color: #e1533d;
+}
+
+.AcceptTermsDiv span {
+  font-size: 14px !important;
+}
+
+.AcceptTermsDiv a {
+  color: #e1533d;
+  text-decoration: none;
+}
+
+.RegisterNewAccountDiv {
+  border-top: 1px solid #acacac8c;
+  margin-top: 20px;
+}
+
+.registerContainer .RegisterNewAccountDiv span {
+  display: block;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.registerContainer .RegisterNewAccountDiv span a {
+  text-decoration: none;
+  color: #e1533d;
+}
+
+.registerContainer span.bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f0604a;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.registerContainer input:focus ~ span.bottom {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+@media screen and (max-width: 769px) {
+  .registerContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    border-radius: 0;
+    width: 100vw;
+    box-shadow: none;
+  }
+  .registerContainer .MainRegLeft img {
+    margin-top: 25px;
+    width: 250px;
+    align-self: center;
+  }
+  .MainRegister form {
+    width: 100%;
+    padding: 5px 10px;
+  }
+  input {
+    font-size: 15px !important;
+    display: block;
+    border-bottom: 1px solid #e1533d13 !important;
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  input {
+    font-size: 15px !important;
+    display: block;
+    border-bottom: 1px solid #e1533d23 !important;
+    width: 100% !important;
+  }
+}

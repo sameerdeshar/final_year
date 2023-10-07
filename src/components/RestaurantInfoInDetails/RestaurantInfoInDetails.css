@@ -1,0 +1,28 @@
+.RestaurantInfoInDetails {
+  width: 60%;
+  margin: 50px 0 0px;
+}
+
+.RestaurantInfoInDetails .info-tbl {
+  border-top: 1px solid rgb(224, 224, 224);
+  padding: 7px 5px;
+  font-size: 15px;
+}
+
+.RestaurantInfoInDetails .info-tbl:last-child {
+  border-bottom: 1px solid rgba(224, 224, 224);
+}
+
+.RestaurantInfoInDetails .info-tbl .PaymentMethodJ span:nth-child(even) {
+  margin: 0 5px;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 1025px) {
+  .RestaurantInfoInDetails {
+    width: 95%;
+    padding: 0 10px;
+    align-self: center;
+    font-size: 1em;
+  }
+}

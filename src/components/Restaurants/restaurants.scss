@@ -1,0 +1,45 @@
+.RestaurantsContainer .container .row {
+  margin-bottom: 50px;
+  justify-content: space-around;
+}
+
+.RestaurantsContainer .container .card {
+  margin: 12px 5px;
+}
+
+.RestaurantsContainer .container .card:hover {
+  background-color: rgb(250, 250, 250);
+  transition: all 0.3s ease;
+}
+
+.RestaurantsContainer .container .card img {
+  width: 55%;
+  align-self: center;
+}
+
+.RestaurantsContainer .container .card .card-body {
+  border-top: rgba(0, 0, 0, 0.125) 1px solid;
+  padding: 10px;
+}
+
+.RestaurantsContainer .container a .card .card-body h5 {
+  padding: 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-size: 15px;
+  color: #000;
+}
+
+.RestaurantsContainer .container .card .card-body p {
+  font-size: 14px;
+  color: rgb(92, 92, 92);
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.RestaurantsContainer .breadcrumb {
+  background-color: transparent;
+}

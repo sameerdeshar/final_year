@@ -1,0 +1,51 @@
+.breadcrumb {
+  background-color: transparent;
+}
+
+.profileCon .editInfo form {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 25px 0 55px;
+}
+
+.profileCon .editInfo form input {
+  width: 49% !important;
+  margin: 5px 0;
+  padding: 10px;
+  border: 1px solid rgba(226, 226, 226, 0.829);
+}
+
+.profileCon .editInfo form button {
+  display: block;
+  margin: 20px auto 30px 0;
+  color: #fff;
+  background-color: #e1533d;
+  border: 0;
+  padding: 7px 60px;
+  border-radius: 5px;
+}
+
+.profileCon .editInfo form button:hover {
+  background-color: #cc4e3b;
+  transition: all 0.3s ease-in;
+}
+
+.profileCon table {
+  margin: 25px 0 75px;
+}
+
+.profileCon table td,
+.profileCon table th {
+  border: 0;
+  padding: 5px;
+}
+
+.profileCon table th {
+  background-color: rgba(226, 226, 226, 0.829);
+}
+
+.profileCon table td {
+  border-bottom: 1px solid rgba(226, 226, 226, 0.829);
+}

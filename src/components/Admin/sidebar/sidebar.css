@@ -1,0 +1,102 @@
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #1f1f1f;
+  overflow-x: hidden;
+  transition: 0.45s;
+}
+
+.sidebar a {
+  padding: 0 10px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  transition: 0.3s;
+  border-bottom: 1px solid #3b3b3b;
+  border-top: 1px solid #3b3b3b;
+  height: 65px;
+  line-height: 65px;
+}
+
+.sidebar a i {
+  color: white;
+  background-color: #e1533d;
+  padding: 5px;
+  border-radius: 5px;
+  margin-right: 6px;
+  font-size: 15px;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+  padding-left: 15px;
+  background-color: #e1533d;
+}
+
+.imgContainerSidebar {
+  padding: 15px 0;
+  background-color: #e1533d;
+}
+
+.sidebar img {
+  display: block;
+  margin: 0 auto;
+}
+
+.openbtn {
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #111;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+}
+
+.openbtn:hover {
+  background-color: #444;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+  transition: margin-left 0.5s; /* If you want a transition effect */
+  padding: 20px;
+}
+
+.adminCopyRight p {
+      color: white;
+      text-align: center;
+      font-size: 15px;
+      margin-top: 25px;
+      margin-bottom: 25px;
+}
+
+.adminCopyRight a {
+      border: 0;
+      padding: 0;
+      margin: 0;
+      height: 0;
+      display: inline;
+      color: white;
+      cursor: pointer;
+      line-height: 0;
+
+}
+.adminCopyRight a:hover {
+      padding: 0;
+      margin: 0;
+      background-color: transparent;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidebar {
+    padding-top: 15px;
+  }
+  .sidebar a {
+    font-size: 18px;
+  }
+}

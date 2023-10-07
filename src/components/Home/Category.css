@@ -1,0 +1,25 @@
+.CategoryContainer .row .card p {
+  font-size: 1em;
+  font-weight: 300;
+  color: black;
+}
+
+.CategoryContainer a {
+  color: black;
+}
+
+.CategoryContainer .card {
+  margin-top: 35px;
+}
+
+.CategoryContainer .heading h2 {
+  margin-top: 55px;
+}
+.CategoryContainer .heading p {
+  font-size: 1em;
+  color: black;
+}
+
+.imageCard img {
+  width: 99%;
+}

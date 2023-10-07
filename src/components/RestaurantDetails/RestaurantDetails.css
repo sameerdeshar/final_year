@@ -1,0 +1,150 @@
+.RestaurantDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 70px auto;
+  width: 80vw;
+}
+
+.restaurantTopContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+
+.restaurantTopContainer .firstContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.restaurantTopContainer .twoContainer span {
+  margin: 0 3px;
+  font-size: 23px;
+}
+
+.restaurantTopContainer img {
+  border: 1px solid rgba(0, 0, 0, 0.155);
+  max-width: 9rem;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+.restaurantTopContainer .restaurantInfo {
+  margin-left: 15px;
+}
+
+.restaurantTopContainer .restaurantInfo h5 {
+  font-size: 20px;
+  color: #000;
+}
+
+.restaurantTopContainer .restaurantInfo h5:hover {
+  cursor: pointer;
+  color: #e1533d;
+  transition: all 0.3s ease;
+}
+
+.restaurantTopContainer .restaurantInfo p {
+  font-size: 15px;
+  color: rgb(117, 117, 117);
+}
+
+.RestaurantDetails .deliveryAlert {
+  background-color: #fff3cd !important;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.RestaurantDetails .deliveryAlert span {
+  margin-right: 10px;
+  font-size: 17px;
+}
+
+.menuContainerRestaurant {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 35px;
+}
+
+.ItemsInMenu {
+  display: flex;
+  flex-direction: column;
+}
+
+.ItemsInMenu button,
+.InfoInMenu button {
+  border: 0;
+  background-color: transparent;
+  font-size: 20px;
+  margin-left: 5px;
+  position: sticky;
+}
+
+.ItemsInMenu button span,
+.InfoInMenu button span {
+  font-size: 22px;
+  margin-right: 5px;
+}
+
+.cartInMenu h5 {
+  background-color: #e1533d;
+  color: #fff;
+  padding: 5px;
+  width: 300px;
+  text-align: center;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  margin-bottom: 0;
+}
+
+.cartInMenu {
+  padding: 0 20px;
+}
+
+.cartInMenu table {
+  width: 100%;
+}
+
+.cartInMenu table td {
+  padding: 5px 0;
+  font-size: 14px;
+}
+
+.cartInMenu table,
+th,
+td {
+  border: 1px solid rgba(221, 221, 221, 0.479);
+  text-align: center;
+}
+
+.cartInMenu table button {
+  border: 0;
+  background-color: transparent;
+  margin: 0 7px;
+  font-size: 15px;
+  color: #e1533d;
+}
+
+@media screen and (max-width: 1025px) {
+  .menuContainerRestaurant {
+    flex-direction: column-reverse;
+  }
+  .cartInMenu {
+    margin-bottom: 25px;
+  }
+  .RestaurantDetails {
+    width: 92vw !important;
+  }
+  .cartInMenu h5 {
+    width: 100%;
+  }
+  .cartInMenu table,
+  th,
+  td {
+    padding: 5px !important;
+  }
+}

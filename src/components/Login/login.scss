@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;500;700&display=swap");
+
+.MainLogin {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: whitesmoke;
+}
+
+.containerLogn {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: whitesmoke;
+  margin-bottom: 50px;
+}
+
+.Container111 {
+  display: flex;
+  box-shadow: 50px 25px 100px 50px #e1533d10;
+  padding: 25px 35px;
+  border-radius: 15px;
+}
+
+.MainLogin .MainLogLeft {
+  align-items: flex-start;
+}
+
+.MainLogin .MainLogLeft img {
+  border-radius: 50px;
+  margin-top: 55px;
+  width: 450px;
+}
+
+.MainLogin form {
+  align-items: flex-end;
+  background: whitesmoke;
+  /** box-shadow: 50px 25px 100px 50px #e1533d10 **/
+  backdrop-filter: blur(9.5px);
+  -webkit-backdrop-filter: blur(9.5px);
+  border-radius: 10px;
+  padding: 25px 0px 15px 0;
+}
+
+.MainLogin h1 {
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 35px;
+  color: #e1533d;
+  text-align: left;
+  margin-left: 35px;
+  font-size: 28px;
+}
+
+.MainLogin form .loginDiv input {
+  border: none;
+  outline: none;
+  margin: 2px 35px 2px 35px;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: transparent;
+  padding: 10px 0 10px 5px;
+  width: 350px;
+  border-bottom: 1px solid #dddddddd;
+  position: relative;
+}
+
+.MainLogin form .loginDiv i {
+  cursor: pointer;
+  position: absolute;
+  top: 15px;
+  right: 45px;
+  color: #353535;
+}
+
+.MainLogin form button {
+  margin: 25px auto 0 auto;
+  display: block;
+  border: 2px solid #e1533d;
+  color: #e1533d;
+  width: 150px;
+  box-shadow: 0px 0px 15px -4px #00000033;
+  cursor: pointer;
+  padding: 5px 0;
+  font-size: 17px;
+  border-radius: 15px;
+}
+
+.MainLogin form button:hover {
+  background-color: #e1533d;
+  transition: all 0.4s ease-in-out;
+  color: white;
+}
+
+.MainLogin form .showPassword input {
+  margin-right: 5px;
+  height: 15px;
+  width: 15px;
+  margin-left: 35px;
+  margin-top: 2px;
+}
+
+.MainLogin .newAccount span {
+  display: block;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 25px;
+  font-size: 16px;
+}
+
+.MainLogin .newAccount span a {
+  text-decoration: none;
+  color: #e1533d;
+}
+
+.MainLogin form .containerPasswords {
+  display: flex;
+  margin-top: 10px;
+  padding-right: 20px;
+}
+
+.MainLogin form .showPassword {
+  margin: 1px;
+}
+
+.MainLogin form .forgotPassword {
+  margin: 0 0 0 40px;
+}
+
+.MainLogin form .forgotPassword a {
+  text-decoration: none;
+}
+
+.MainLogin form .forgotPassword a label {
+  cursor: pointer;
+}
+
+.loginDiv.loginDiv {
+  position: relative;
+}
+
+.loginDiv input {
+  width: 6.5em;
+  border: 1.5px solid transparent !important;
+  transition: background-color 0.3s ease-in-out !important;
+}
+
+.loginDiv input:focus {
+  outline: none;
+}
+
+.loginDiv input::placeholder {
+  color: #611d12d0 !important;
+}
+
+.loginDiv span {
+  position: absolute;
+  background-color: #e1533d;
+  transition: transform 0.3s ease;
+}
+
+.loginDiv input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom-color: hsla(185, 100%, 62%, 0.2);
+}
+
+.loginDiv input:focus {
+  outline: none;
+}
+
+.loginDiv input::placeholder {
+  color: black;
+}
+
+.loginDiv span {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background-color: #f0604a;
+  transform-origin: bottom right;
+  transform: scaleX(0);
+  transition: transform 0.5s ease;
+}
+
+.loginDiv input:focus ~ span {
+  transform-origin: bottom left;
+  transform: scaleX(1);
+}
+
+.popUpForgotPassword {
+  position: absolute;
+  top: 50px;
+  right: 220px;
+  display: none;
+  z-index: 1000;
+  padding: 10px;
+  width: 410px;
+  background-color: white;
+}
+.popUpForgotPassword form {
+  background-color: white;
+}
+.popUpForgotPassword input {
+  margin: 0 auto;
+  display: block;
+  border: 1px solid black;
+}
+
+@media screen and (max-width: 769px) {
+  .Container111 {
+    flex-direction: column-reverse;
+    align-items: center;
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+  }
+  .MainLogin .MainLogLeft img {
+    margin-top: 25px;
+    width: 250px;
+    align-self: center;
+  }
+  .MainLogin form {
+    padding: 0;
+  }
+}
