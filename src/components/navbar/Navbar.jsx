@@ -20,7 +20,8 @@ function Navbar() {
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
-          preserveAspectRatio="none">
+          preserveAspectRatio="none"
+        >
           <path
             d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
             opacity=".25"
@@ -38,7 +39,7 @@ function Navbar() {
         </svg>
       </div>
       <nav className="navbar navbar-expand-lg navbar-light">
-        <img src="./images/icon.png" className="logo" alt="icon" />
+        <img src="/images/logo.png" className="logo" alt="icon" />
         <button
           className="navbar-toggler"
           type="button"
@@ -46,7 +47,8 @@ function Navbar() {
           data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent"
           aria-expanded="false"
-          aria-label="Toggle navigation">
+          aria-label="Toggle navigation"
+        >
           <span className="navbar-toggler-icon" />
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">

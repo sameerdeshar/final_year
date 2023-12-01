@@ -43,6 +43,7 @@
 }
 
 .sidebar img {
+  background-color: #111;
   display: block;
   margin: 0 auto;
 }
@@ -67,28 +68,27 @@
 }
 
 .adminCopyRight p {
-      color: white;
-      text-align: center;
-      font-size: 15px;
-      margin-top: 25px;
-      margin-bottom: 25px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 
 .adminCopyRight a {
-      border: 0;
-      padding: 0;
-      margin: 0;
-      height: 0;
-      display: inline;
-      color: white;
-      cursor: pointer;
-      line-height: 0;
-
+  border: 0;
+  padding: 0;
+  margin: 0;
+  height: 0;
+  display: inline;
+  color: white;
+  cursor: pointer;
+  line-height: 0;
 }
 .adminCopyRight a:hover {
-      padding: 0;
-      margin: 0;
-      background-color: transparent;
+  padding: 0;
+  margin: 0;
+  background-color: transparent;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */

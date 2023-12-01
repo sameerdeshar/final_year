@@ -1,16 +1,18 @@
 .containerAdmin {
-  background-color: #e1533d;
+  background-image: url("./images/background_login.jpg");
+  background-size: cover;
+
   min-height: 100vh;
 }
 
 .containerAdmin img {
+  padding-top: 2rem;
   margin: 0 auto;
   display: block;
-  padding-top: 50px;
 }
 
 .containerAdmin h1 {
-  color: white;
+  color: whitesmoke;
   padding: 50px 0;
   display: block;
 }

@@ -5,7 +5,7 @@ function Admin() {
   return (
     <>
       <div className="containerAdmin">
-        <img src="./images/icon.png" width="300px" alt="logo hunger road" />
+        <img src="./images/logo.png" width="300px" alt="logo hunger road" />
         <h1 className="text-center">Admin area</h1>
         <form className="text-center">
           <div className="adminInput">

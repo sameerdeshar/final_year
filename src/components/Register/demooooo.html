@@ -1,0 +1,168 @@
+import React, { useState, useEffect } from "react";
+import Axios from "axios";
+import { Link } from "react-router-dom";
+import "./register.scss";
+import Navbar from "../navbar/Navbar";
+import Footer from "../Footer/Footer";
+
+function Register() {
+  const [formData, setFormData] = useState({
+    firstname: "",
+    lastname: "",
+    email: "",
+    password: "",
+    confirm_password: "",
+    phone: "",
+    terms: false,
+  });
+
+  const handleRegistration = async () => {
+    // Ensure that the user has agreed to the terms before proceeding
+    if (!formData.terms) {
+      alert("Please agree to the terms before registering.");
+      return;
+    }
+
+    try {
+      const csrfToken = document.querySelector(
+        'meta[name="csrf-token"]'
+      ).content;
+
+      const response = await Axios.post(
+        "http://127.0.0.1:8000/api/user/register",
+        formData,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            "X-CSRF-TOKEN": csrfToken,
+          },
+        }
+      );
+
+      console.log("Registration successful", response.data);
+      // You can redirect to a success page or perform other actions here
+    } catch (error) {
+      console.error("Registration failed", error);
+      // You can display an error message to the user
+    }
+  };
+
+  return (
+    <div className="MainRegister">
+      <Navbar />
+      <div className="containerReg">
+        <div className="registerContainer">
+          <div className="MainRegLeft">
+            <img
+              src="https://res.cloudinary.com/durpirilj/image/upload/v1638719585/partnerImg/5_bons8i.svg"
+              width="450px"
+              alt="img for login page"
+            />
+          </div>
+          <form>
+            <h1>Create an Account</h1>
+            <div className="RegisterFullNameDiv">
+              <input
+                type="text"
+                name="firstname"
+                id="firstname"
+                placeholder="First Name"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, firstname: e.target.value })
+                }
+              />
+              <input
+                type="text"
+                name="lastname"
+                id="lastname"
+                placeholder="Last Name"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, lastname: e.target.value })
+                }
+              />
+            </div>
+            <div className="RegisterEmailDiv">
+              <input
+                type="email"
+                name="email"
+                id="email"
+                // pattern="[a-z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?"
+                placeholder="Email"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, email: e.target.value })
+                }
+              />
+              <span className="bottom"></span>
+            </div>
+            <div className="RegisterPasswordsDiv">
+              <input
+                type="password"
+                name="password"
+                id="password"
+                placeholder="Password"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, password: e.target.value })
+                }
+              />
+              <input
+                type="password"
+                name="confirm_password"
+                id="confirm_password"
+                placeholder="Confirm Password"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, confirm_password: e.target.value })
+                }
+              />
+              <span className="bottom"></span>
+            </div>
+            <div className="RegisterPhoneDiv">
+              <input
+                type="tel"
+                name="phone"
+                id="phone"
+                placeholder="Phone Number"
+                minLength="9"
+                maxLength="14"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, phone: e.target.value })
+                }
+              />
+              <span className="bottom"></span>
+            </div>
+            <div className="AcceptTermsDiv">
+              <input
+                type="checkbox"
+                className="checkbox-primary"
+                name="terms"
+                id="AcceptTerms"
+                required
+                onChange={(e) =>
+                  setFormData({ ...formData, terms: e.target.checked })
+                }
+              />
+              <span>
+                I agree with <Link to="/">Terms</Link> and{" "}
+                <Link to="">Privacy</Link>
+              </span>
+            </div>
+            <button
+              className="buttonRegister"
+              type="button"
+              onClick={handleRegistration}
+            >
+              Register
+            </button>
+           
+          </form>
+   
+    </div>
+  );
+}
+
+export default Register;

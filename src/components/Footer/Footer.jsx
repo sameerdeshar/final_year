@@ -38,14 +38,14 @@ function Footer() {
       <div className="container-fluid text-center text-md-left mt-5">
         <div className="row mt-3">
           <div className="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <h6>Hunger Road</h6>
+            <h6>Order Munch</h6>
             <hr
               className="deep-purple accent-2 mb-4 mt-0 d-inline-block mx-auto"
               style={{ width: 60 }}
             />
             <p>
-              Your everyday, right away Order food and grocery delivery online
-              from hundreds of restaurants and shops.
+              Your everyday, right away Order food online from hundreds of
+              restaurants and shops.
             </p>
           </div>
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4 hideInMobile">
@@ -100,13 +100,13 @@ function Footer() {
               style={{ width: 60 }}
             />
             <p>
-              <i className="fas fa-home mr-2" /> Jordan, Amman
+              <i className="fas fa-home mr-2" /> OrderMunch
             </p>
             <p>
-              <i className="fas fa-envelope mr-2" /> info@example.com
+              <i className="fas fa-envelope mr-2" /> info@ordermunch.com
             </p>
             <p>
-              <i className="fas fa-phone mr-2" /> + 962 234 567 88
+              <i className="fas fa-phone mr-2" /> 9800119988
             </p>
           </div>
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 downloadapp">
@@ -134,11 +134,11 @@ function Footer() {
       </div>
       <div className="footer-copyright text-center py-3">
         Developed and Designed by
-        <a href="https://azzmmii.com" target="_blank">
+        <a href="" target="">
           {" "}
-          AzmiTammam
+          OrderMunch Team
         </a>{" "}
-        &copy; 2022 All Rights Reserved.
+        &copy; 2023 All Rights Reserved.
       </div>
     </footer>
   );
